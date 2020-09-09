@@ -1,0 +1,362 @@
+{
+	"info": {
+		"_postman_id": "b9e4e455-6656-4791-a4f4-1c85f790c7c2",
+		"name": "pfms",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "https://api.spacexdata.com/v3/capsules/?capsule_serial=C113",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "abd2951c-2aff-40dc-bb03-70437472dfb5",
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://api.spacexdata.com/v3/capsules/?capsule_serial=C101",
+					"protocol": "https",
+					"host": [
+						"api",
+						"spacexdata",
+						"com"
+					],
+					"path": [
+						"v3",
+						"capsules",
+						""
+					],
+					"query": [
+						{
+							"key": "capsule_serial",
+							"value": "C101"
+						}
+					]
+				},
+				"description": "Assessment for capsule-one capsule"
+			},
+			"response": []
+		},
+		{
+			"name": "https://api.spacexdata.com/v3/capsules",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.spacexdata.com/v3/capsules/upcoming",
+					"protocol": "https",
+					"host": [
+						"api",
+						"spacexdata",
+						"com"
+					],
+					"path": [
+						"v3",
+						"capsules",
+						"upcoming"
+					]
+				},
+				"description": "ALL capsules"
+			},
+			"response": []
+		},
+		{
+			"name": "https://api.spacexdata.com/v3/capsules",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.spacexdata.com/v3/capsules/upcoming",
+					"protocol": "https",
+					"host": [
+						"api",
+						"spacexdata",
+						"com"
+					],
+					"path": [
+						"v3",
+						"capsules",
+						"upcoming"
+					]
+				},
+				"description": "upcoming capsules"
+			},
+			"response": []
+		},
+		{
+			"name": "https://api.spacexdata.com/v3/capsules/past",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.spacexdata.com/v3/capsules/past",
+					"protocol": "https",
+					"host": [
+						"api",
+						"spacexdata",
+						"com"
+					],
+					"path": [
+						"v3",
+						"capsules",
+						"past"
+					]
+				},
+				"description": "past capsules response"
+			},
+			"response": []
+		},
+		{
+			"name": "https://api.spacexdata.com/v3/capsules/C00",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.spacexdata.com/v3/capsules/C00",
+					"protocol": "https",
+					"host": [
+						"api",
+						"spacexdata",
+						"com"
+					],
+					"path": [
+						"v3",
+						"capsules",
+						"C00"
+					]
+				},
+				"description": "ONE capsule error"
+			},
+			"response": []
+		},
+		{
+			"name": "curl --location --request GET 'https://api.spacexdata.com/v3/capsules?capsule_serial=C'",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "curl --location --request GET 'https://api.spacexdata.com/v3/capsules?capsule_serial=CEFSEFSDFSF'",
+					"protocol": "curl --location --request GET 'https",
+					"host": [
+						"api",
+						"spacexdata",
+						"com"
+					],
+					"path": [
+						"v3",
+						"capsules"
+					],
+					"query": [
+						{
+							"key": "capsule_serial",
+							"value": "CEFSEFSDFSF'"
+						}
+					]
+				},
+				"description": "All capsule error"
+			},
+			"response": []
+		},
+		{
+			"name": "'https://api.spacexdata.com/v3/capsules/upcoming?status=false",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "'https://api.spacexdata.com/v3/capsules/upcoming?status=false",
+					"protocol": "'https",
+					"host": [
+						"api",
+						"spacexdata",
+						"com"
+					],
+					"path": [
+						"v3",
+						"capsules",
+						"upcoming"
+					],
+					"query": [
+						{
+							"key": "status",
+							"value": "false"
+						}
+					]
+				},
+				"description": "error for upcoming capsule"
+			},
+			"response": []
+		},
+		{
+			"name": "curl --location --request GET 'https://api.spacexdata.com/v3/capsules?capsule_serial=C'",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "curl --location --request GET 'https://api.spacexdata.com/v3/capsules?capsule_serial=CEFSEFSDFSF'",
+					"protocol": "curl --location --request GET 'https",
+					"host": [
+						"api",
+						"spacexdata",
+						"com"
+					],
+					"path": [
+						"v3",
+						"capsules"
+					],
+					"query": [
+						{
+							"key": "capsule_serial",
+							"value": "CEFSEFSDFSF'"
+						}
+					]
+				},
+				"description": "all capsule error"
+			},
+			"response": []
+		},
+		{
+			"name": "curl --location --request GET 'https://api.spacexdata.com/v3/capsules?capsule_serial=C'",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "curl --location --request GET 'https://api.spacexdata.com/v3/capsules?capsule_serial=ACTIVE",
+					"protocol": "curl --location --request GET 'https",
+					"host": [
+						"api",
+						"spacexdata",
+						"com"
+					],
+					"path": [
+						"v3",
+						"capsules"
+					],
+					"query": [
+						{
+							"key": "capsule_serial",
+							"value": "ACTIVE"
+						}
+					]
+				},
+				"description": "ALL capsule error for paramter value-ACTIVE\r\n"
+			},
+			"response": []
+		},
+		{
+			"name": "https://api.spacexdata.com/v3/capsules/C00",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.spacexdata.com/v3/capsules/C00?id=CORE",
+					"protocol": "https",
+					"host": [
+						"api",
+						"spacexdata",
+						"com"
+					],
+					"path": [
+						"v3",
+						"capsules",
+						"C00"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "CORE"
+						}
+					]
+				},
+				"description": "Invalid capsule ID"
+			},
+			"response": []
+		},
+		{
+			"name": "https://api.spacexdata.com/v3/capsules/?original_launch=2017-02-19T14:39",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.spacexdata.com/v3/capsules/?original_launch=2017-02-19T14:39",
+					"protocol": "https",
+					"host": [
+						"api",
+						"spacexdata",
+						"com"
+					],
+					"path": [
+						"v3",
+						"capsules",
+						""
+					],
+					"query": [
+						{
+							"key": "original_launch",
+							"value": "2017-02-19T14:39"
+						}
+					]
+				},
+				"description": "invalid launch date"
+			},
+			"response": []
+		},
+		{
+			"name": "https://api.spacexdata.com/v3/capsules/original_launch date",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.spacexdata.com/v3/capsules/original_launch date",
+					"protocol": "https",
+					"host": [
+						"api",
+						"spacexdata",
+						"com"
+					],
+					"path": [
+						"v3",
+						"capsules",
+						"original_launch date"
+					]
+				},
+				"description": "null original date"
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
